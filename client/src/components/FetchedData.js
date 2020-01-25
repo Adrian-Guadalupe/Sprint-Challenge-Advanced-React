@@ -22,7 +22,7 @@ class FetchedData extends React.Component {
 
    render() {
       return (
-         <div>
+         <div className='card-list' data-testid='card-list'>
             {this.state.players.map(player => {
                return <PlayerCard key={player.name} player={player} />
             })}
